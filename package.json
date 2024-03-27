@@ -4,8 +4,13 @@
   "description": "ohmyfood",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed"
   },
-  "author": "francisco nino",
-  "license": "ISC"
+"author": "francisco nino",
+"license": "ISC",
+"browserslist": "last 4 versions",
+"devDependencies": {
+"sass": "^1.72.0"
+}
 }
