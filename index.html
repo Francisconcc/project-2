@@ -4,84 +4,105 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Ohmyfood</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./public/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8f22b75fb6.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <img src="public/img/ohmyfood.png" alt="ohmyfood">
     </header>
 
     <div class="location">
-        <i></i>
-        <p>Paris, Belleville</p>
+        <i class="fa-solid fa-location-dot"></i>
+        <p><strong>Paris, Belleville</strong></p>
     </div>
 
     <main>
         <section class="explore">
-            <h1><strong>Book the menu you like</strong></h1>
-            <p>Discover top-of-the-art restaurants we picked for you</p>
-            <button>Explorer nos restaurants</button>
+            <h1 class="explore__title"><strong>Book the menu you like</strong></h1>
+            <p class="explore__p">Discover top-of-the-art restaurants we picked for you</p>
+            <button class="explore__btn">Explore our restaurants</button>
         </section>
 
         <section class="how-it-works">
             <h1><strong>How it works</strong></h1>
-            <div class="steps">
-                <div class="step">
-                    <h2>1</h2>
-                    <i></i>
+            <div class="how-it-works__steps">
+                <div class="how-it-works__container">
+                    <div class="how-it-works__circle">
+                        <h2>1</h2>
+                    </div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
                     <p><strong>Choose a restaurant</strong></p>
                 </div>
-                <div class="step">
-                    <h2>2</h2>
-                    <i></i>
-                    <p><strong>Find the best food</strong></p>
+                <div class="how-it-works__container">
+                    <div class="how-it-works__circle">
+                        <h2>2</h2>
+                    </div>
+                    <i class="fa-solid fa-list"></i>
+                    <p><strong>Create your menu</strong></p>
                 </div>
-                <div class="step">
-                    <i></i>
-                    <h2>3</h2>
-                    <p><strong> enjoy in a restaurant</strong></p>
+                <div class="how-it-works__container">
+                    <div class="how-it-works__circle">
+                        <h2>3</h2>
+                    </div>
+                    <i class="fa-solid fa-store"></i>
+                    <p><strong> Go to enjoy it at the restaurant</strong></p>
                 </div>
         </section>
 
         <section class="restaurantes">
             <h1><strong>Restaurants</strong></h1>
-            <div class="restaurants">
-                <div class="restaurante">
+            <div class="restaurantes__restaurants">
+                <div class="restaurantes__restaurante">
                     <img src="public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-                    <h2><strong>The full pallette</strong></h2>
-                    <p>New yo rk</p>
-                    <i></i>
+                    <div class="restaurantes__text">
+                        <h2><strong>The full pallette</strong></h2>
+                        <p>New york</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
-                <div class="restaurante">
+                <div class="restaurantes__restaurante">
                     <img src="public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
-                    <h2><strong>The full pallette</strong></h2>
-                    <p>New york</p>
-                    <i></i>
+                    <div class="restaurantes__text">
+                        <h2><strong>The full pallette</strong></h2>
+                        <p>New york</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
-                <div class="restaurante">
+                <div class="restaurantes__restaurante">
                     <img src="public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-                    <h2><strong>The full pallette</strong></h2>
-                    <p>New york</p>
-                    <i></i>
+                    <div class="restaurantes__text">
+                        <h2><strong>The full pallette</strong></h2>
+                        <p>New york</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
-                <div class="restaurante">
+                <div class="restaurantes__restaurante">
                     <img src="public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
-                    <h2><strong>The full pallette</strong></h2>
-                    <p>New york</p>
-                    <i></i>
+                    <div class="restaurantes__text">
+                        <h2><strong>The full pallette</strong></h2>
+                        <p>New york</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
         </section>
 
     </main>
-    <footer>
-        <img src="public/img/ohmyfood.png" alt="ohmyfood">
+    <footer class="footer">
+        <h1> ohmyfood</h1>
         <ul>
-            <li><i></i> suggest a restaurant</li>
-            <li><i></i> become a partner</li>
+            <li><i class="fa-solid fa-utensils"></i> suggest a restaurant</li>
+            <li><i class="fa-solid fa-handshake-angle"></i> become a partner</li>
             <li>Legal</li>
             <li>contact</li>
         </ul>

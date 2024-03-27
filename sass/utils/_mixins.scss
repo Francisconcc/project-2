@@ -1,0 +1,43 @@
+@mixin btn {
+    border: none;
+    font-family: $text-font;
+    font-size: 15px;
+    color: white;
+    background: linear-gradient(to top, $colour-primary, $colour-secondary);
+    border-radius: 20px;
+    height: 45px;
+    width: 200px;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin box-container{
+    @include flex-row();
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: $colour-grey;
+    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002b;
+    width: 280px;
+    height: 30px;
+}
+
+@mixin rest-container{
+    @include flex-col();
+    align-items: flex-start;
+    height:210px;
+    width: 340px;
+    background-color: $colour-white;
+    font-size:12px;
+    border-radius: 20px;
+}

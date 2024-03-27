@@ -1,0 +1,28 @@
+@import "utils/mixins";
+@import "utils/variables";
+
+.footer{
+    background-color: $colour-black;
+    color:$colour-white;
+    padding:20px;
+    padding-top:30px;
+    padding-bottom:40px;
+
+    h1{
+        font-family: $title-font;
+        font-size:20px;
+        font-weight: lighter;
+        padding-bottom: 15px;
+    }
+
+    img{
+        height: 50px;
+        width: 50px;
+        color:$colour-white;
+    }
+
+    li{
+        font-family: $text-font;
+        list-style: none;
+    }
+}

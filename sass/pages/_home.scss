@@ -1,0 +1,135 @@
+.location {
+    @include flex-row();
+    gap: 20px;
+    justify-content: center;
+    background-color: rgba(84, 84, 84, 0.142);
+    height: 50px;
+    border-top: 1px;
+
+    p {
+        font-family: $text-font;
+        font-weight: 500;
+        font-size: 15px;
+        color: rgba(68, 68, 68, 0.959);
+    }
+
+    i {
+        color: rgba(71, 71, 71, 0.959);
+    }
+}
+
+.explore {
+    @include flex-col();
+    gap: 40px;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $colour-grey;
+
+    &__title {
+        font-family: $text-font;
+        font-weight: bold;
+    }
+
+    &__p {
+        font-family: $text-font;
+        color: black;
+        width: 300px;
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    &__btn {
+        @include btn();
+    }
+}
+
+.how-it-works {
+    @include flex-col();
+    gap: 40px;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: $colour-white;
+    font-family: $text-font;
+
+    h1 {
+        font-weight: bold;
+    }
+
+    &__steps {
+        @include flex-col();
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__container {
+        @include box-container();
+        position: relative;
+        gap: 20px;
+        padding-left: 40px;
+    }
+
+    &__circle {
+        @include flex-row();
+        justify-content: center;
+        border-radius: 200px;
+        font-size: 10px;
+        background-color: $colour-primary;
+        font-weight: lighter;
+        color: $colour-white;
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        left: -10px;
+        font-family: $text-font;
+    }
+
+    i {
+        color: rgba(84, 84, 84, 0.667);
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.restaurantes {
+    @include flex-col();
+    gap: 30px;
+    align-items: flex-start;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: $colour-grey;
+    font-family: $text-font;
+
+    &__restaurants {
+        @include flex-col();
+        gap: 20px;
+        align-items: center;
+    }
+
+    &__restaurante {
+        @include rest-container();
+        position: relative;
+
+        img {
+            height: 150px;
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+
+        i {
+            position: absolute;
+            left: 285px;
+            bottom: 20px;
+            font-size: 20px;
+        }
+    }
+
+    &__text {
+        padding: 10px;
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+}
